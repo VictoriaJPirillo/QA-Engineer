@@ -1,0 +1,29 @@
+def generate_professional_profile():
+ """Generates a personalized professional profile as a Python dictionary."""
+
+ profile = {}
+
+ # Prompt user for essential information
+ profile["Victoria J Pirillo"] = input("Enter your name (including PhD and pronouns, if applicable): ")
+ profile["highlights"] = input("List 3-5 key highlights of your QA experience: ").split(", ")
+ profile["approach"] = input(
+     "Describe your approach to QA in 2-3 key points: "
+ ).split(", ")
+ profile["outcome"] = input("What are the outcomes you typically achieve in QA roles?: ")
+ profile["why_me"] = input(
+     "List 3-4 reasons why you would be an asset to a QA team: "
+ ).split(", ")
+
+ # Additional fields (optional)
+ profile["brief_intro"] = input(
+     "Enter a brief introduction (1-2 sentences): "
+ )
+
+ # Placeholder for technical skills (to be filled in later)
+ profile["technical_skills"] = []
+
+ return profile
+
+# Example usage:
+my_profile = generate_professional_profile()
+print(my_profile)
